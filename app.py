@@ -3,6 +3,9 @@ import os
 from flask import Flask, jsonify, make_response
 from flask_migrate import Migrate
 from flask_restful import Api, Resource
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from models import db, Bird
 
